@@ -7,7 +7,7 @@ function Table() {
   if (!planets || planets.length <= 0) {
     return <h2>Loading...</h2>;
   }
-  // console.log(planets.results);
+  console.log(planets);
 
   return (
     <table>
@@ -30,7 +30,7 @@ function Table() {
       </thead>
       <tbody>
         {
-          planets.results.map((planet, i) => (
+          planets.map((planet, i) => (
             <tr key={ i }>
               <td>{ planet.name }</td>
               <td>{ planet.rotation_period }</td>
