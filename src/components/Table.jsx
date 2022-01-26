@@ -7,7 +7,7 @@ function Table() {
   if (!planets || planets.length <= 0) {
     return <h2>Loading...</h2>;
   }
-  console.log(planets);
+  // console.log(planets);
 
   return (
     <table>
